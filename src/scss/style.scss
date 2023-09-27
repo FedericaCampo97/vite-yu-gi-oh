@@ -1,0 +1,14 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' as *;
+
+.img_header {
+    width: 100px;
+    height: 80px;
+}
+
+.card {
+    width: calc(100% / 5);
+
+    img {
+        width: 100%;
+    }
+}
