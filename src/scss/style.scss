@@ -5,10 +5,29 @@
     height: 80px;
 }
 
+.block {
+    background-color: rgb(231, 160, 26);
+}
+
 .card {
     width: calc(100% / 5);
+    text-align: center;
+    border: none;
+
+    color: white;
+
+    div {
+        background-color: rgb(231, 160, 26);
+        height: 100%
+    }
 
     img {
         width: 100%;
     }
+
+    p {
+        color: black;
+        margin: 9px;
+    }
+
 }

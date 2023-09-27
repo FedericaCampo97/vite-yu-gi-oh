@@ -28,15 +28,18 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card_container d-flex flex-wrap">
-                    <yugiCard v-for="card in arrayCards" :card="card" />
-                </div>
+    <div class="block p-5">
+        <div class="container bg-white p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card_container d-flex flex-wrap">
+                        <yugiCard v-for="card in arrayCards" :card="card" />
+                    </div>
 
+                </div>
             </div>
         </div>
+
     </div>
 </template>
 
