@@ -29,9 +29,12 @@ export default {
 
 <template>
     <div class="block p-5">
-        <div class="container bg-white p-5">
-            <div class="row">
+        <div class="container ">
+            <select name="" id=""></select>
+            <div class="row bg-white p-4">
+
                 <div class="col">
+                    <p class="bg-black text-white px-3 py-2 m-0 mx-3">Found {{ arrayCards.length }} card</p>
                     <div class="card_container d-flex flex-wrap">
                         <yugiCard v-for="card in arrayCards" :card="card" />
                     </div>
