@@ -10,7 +10,9 @@ export default {
     data() {
         return {
             base_url: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
-            arrayCards: null
+            arrayCards: null,
+            archetype_url: 'https://db.ygoprodeck.com/api/v7/archetypes.php',
+            arrayArchetype: null
         }
     },
     created() {
@@ -23,6 +25,12 @@ export default {
             .catch(error => {
                 console.error(error)
             })
+        axios
+            .get(this.archetype_url)
+            .then(response => {
+                this.arrayArchetype = response.data;
+                console.log(this.arrayArchetype)
+            })
     },
 }
 </script>
@@ -30,7 +38,11 @@ export default {
 <template>
     <div class="block p-5">
         <div class="container ">
-            <select name="" id=""></select>
+            <select name="" id="">
+                <option value="alien" v-for="element in arrayArchetype">
+                    {{ element.archetype_name }}
+                </option>
+            </select>
             <div class="row bg-white p-4">
 
                 <div class="col">
