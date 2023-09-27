@@ -5,6 +5,15 @@
     height: 80px;
 }
 
+.search {
+    padding: 5px;
+    border-radius: 7px;
+
+    option {
+        border: none;
+    }
+}
+
 .block {
     background-color: rgb(231, 160, 26);
 }
